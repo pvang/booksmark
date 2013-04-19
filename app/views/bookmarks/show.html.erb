@@ -1,0 +1,27 @@
+<title>Bookmark View</title>
+
+<%= render 'nav' %>
+
+<h1>Bookmark View</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @bookmark.url %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @bookmark.name %>
+</p>
+
+<p>
+  <b>Datesaved:</b>
+  <%= @bookmark.dateSaved %>
+</p>
+
+<br />
+
+<%= link_to 'Edit', edit_bookmark_path(@bookmark) %> &bull;
+<%= link_to 'Back', bookmarks_path %>
